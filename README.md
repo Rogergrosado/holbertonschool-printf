@@ -1,2 +1,2 @@
 # holbertonschool-printf
-The Print f proyect
+The making of our Printf Proyect
