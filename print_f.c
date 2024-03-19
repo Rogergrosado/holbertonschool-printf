@@ -17,9 +17,9 @@ int _printf(const char *format, ...)
 
     while (*format) /* A loop that iterates through the characters of the format */
     {
-        if (*format != '%') /* if format is no the % sign*/
+        if (*format != '%') /* if format is not the % sign*/
         {
-            write(1, format, 1); /*Write the char to the standard output */
+            write(1, format, 1); /* Write the char to the standard output */
             chara_print++;
         }
         else /* If format is the % sign */
@@ -43,10 +43,8 @@ int _printf(const char *format, ...)
             {
                 char *str = va_arg(list_of_args, char *);
                 int str_len = 0;
-                /* Calculate the leght of the string */
-		#define SOME_MAX_LENGTH 100 /* or any appropriate maximum length*/
-
-                while (str[str_len] != '\0'&& str_len < SOME_MAX_LENGTH)
+                /* Calculate the length of the string */
+                while (str_len < SOME_MAX_LENGTH && str[str_len] != '\0')
                     str_len++;
                 /* Write the string to the standard output */
                 write(1, str, str_len);
