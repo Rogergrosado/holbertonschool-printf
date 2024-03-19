@@ -15,27 +15,27 @@ int _printf(const char *format, ...)
 
     va_start(list_of_args, format);
 
-    while (*format) // A loop that iterates through the characters of the format
+    while (*format) /* A loop that iterates through the characters of the format */
     {
-        if (*format != '%') // if format is no the % sign
+        if (*format != '%') /* if format is no the % sign*/
         {
-            write(1, format, 1); //Write the char to the standard output
+            write(1, format, 1); /*Write the char to the standard output */
             chara_print++;
         }
-        else //If format is the % sign
+        else /* If format is the % sign */
         {
-            format++; // Skip '%' - Check the next character
+            format++; /* Skip '%' - Check the next character */
             if (*format == '\0')
                 break;
 
-            if (*format == '%') //This solves %%
+            if (*format == '%') /* This solves %% */
             {
-                write(1, format, 1); //Handle '%%' (double '%')
+                write(1, format, 1); /* Handle '%%' (double '%') */
                 chara_print++;
             }
             else if (*format == 'c')
             {
-                char c = va_arg(list_of_args, int); //Handle '%c' (character)
+                char c = va_arg(list_of_args, int); /* Handle '%c' (character) */
                 write(1, &c, 1);
                 chara_print++;
             }
@@ -43,10 +43,10 @@ int _printf(const char *format, ...)
             {
                 char *str = va_arg(list_of_args, char *);
                 int str_len = 0;
-                // Calculate the leght of the string
+                /* Calculate the leght of the string */
                 while (str[str_len] != '\0')
                     str_len++;
-                // Write the string to the standard output
+                /* Write the string to the standard output */
                 write(1, str, str_len);
                 chara_print += str_len;
             }
