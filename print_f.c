@@ -1,10 +1,10 @@
 #include "main.h"
-#include <unistd.h> // Include this for the write function
-#include <stdarg.h> // Include this for va_list, va_start, va_arg, and va_end
+#include <unistd.h> 
+#include <stdarg.h> 
 
 int _printf(const char *format, ...)
 {
-    int chara_print = 0; // Corrected variable declaration
+    int chara_print = 0; 
 
     va_list list_of_args;
 
@@ -15,27 +15,27 @@ int _printf(const char *format, ...)
 
     va_start(list_of_args, format);
 
-    while (*format)
+    while (*format) // A loop that iterates through the characters of the format
     {
-        if (*format != '%')
+        if (*format != '%') // if format is no the % sign
         {
-            write(1, format, 1);
+            write(1, format, 1); //Write the char to the standard output
             chara_print++;
         }
-        else
+        else //If format is the % sign
         {
-            format++;
+            format++; // Skip '%' - Check the next character
             if (*format == '\0')
                 break;
 
-            if (*format == '%')
+            if (*format == '%') //This solves %%
             {
-                write(1, format, 1);
+                write(1, format, 1); //Handle '%%' (double '%')
                 chara_print++;
             }
             else if (*format == 'c')
             {
-                char c = va_arg(list_of_args, int);
+                char c = va_arg(list_of_args, int); //Handle '%c' (character)
                 write(1, &c, 1);
                 chara_print++;
             }
@@ -43,10 +43,10 @@ int _printf(const char *format, ...)
             {
                 char *str = va_arg(list_of_args, char *);
                 int str_len = 0;
-
+                // Calculate the leght of the string
                 while (str[str_len] != '\0')
                     str_len++;
-
+                // Write the string to the standard output
                 write(1, str, str_len);
                 chara_print += str_len;
             }
@@ -55,14 +55,17 @@ int _printf(const char *format, ...)
         format++;
     }
 
-    va_end(list_of_args); // Added semicolon
+    va_end(list_of_args); 
 
     return chara_print;
 }
 
-int main() // Corrected function declaration
+int main() 
 {
-    _printf("Hello, %s!", "World");
+    _printf("Roger\n");
+    _printf("%c\n", 'v');	
+    _printf("%s\n", "String");
+    _printf("%%\n");
     return 0;
 }
 
