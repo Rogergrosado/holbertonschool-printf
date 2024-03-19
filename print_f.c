@@ -1,3 +1,4 @@
+#include "main.h"
 #include <unistd.h> 
 #include <stdarg.h> 
 
@@ -58,13 +59,3 @@ int _printf(const char *format, ...)
 
     return chara_print;
 }
-
-int main() 
-{
-    _printf("Roger\n");
-    _printf("%c\n", 'v');	
-    _printf("%s\n", "String");
-    _printf("%%\n");
-    return 0;
-}
-
