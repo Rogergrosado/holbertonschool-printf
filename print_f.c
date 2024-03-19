@@ -44,6 +44,7 @@ int _printf(const char *format, ...)
                 char *str = va_arg(list_of_args, char *);
                 int str_len = 0;
                 /* Calculate the length of the string */
+		#define SOME_MAX_LENGTH 100 /* or any appropriate maximum length*/
                 while (str_len < SOME_MAX_LENGTH && str[str_len] != '\0')
                     str_len++;
                 /* Write the string to the standard output */
