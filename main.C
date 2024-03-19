@@ -1,4 +1,4 @@
-#include "my_printf.h"
+#include "main.h"
 
 int main(void)
 {

@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * _printf - a function that produces output according to a format
+ * @format: character string
+ * Return: the number of characters printed
+ */
+
 int _printf(const char *format, ...)
 {
 	va_list args;
@@ -10,10 +16,13 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 
-	while (*format != '\0') {
-		if (*format == '%') {
+	while (*format != '\0')
+	{
+		if (*format == '%')
+		{
 			format++;
-			switch (*format) {
+			switch (*format)
+			{
 				case 'c':
 					ch = va_arg(args, int);
 					putchar(ch);
@@ -21,7 +30,8 @@ int _printf(const char *format, ...)
 					break;
 				case 's':
 					str = va_arg(args, char*);
-					while (*str) {
+					while (*str)
+					{
 						putchar(*str);
 						count++;
 						str++;
@@ -37,7 +47,9 @@ int _printf(const char *format, ...)
 					count += 2;
 					break;
 			}
-		} else {
+		}
+		else
+		{
 			putchar(*format);
 			count++;
 		}
@@ -45,6 +57,5 @@ int _printf(const char *format, ...)
 	}
 
 	va_end(args);
-	return count;
+	return (count);
 }
-
