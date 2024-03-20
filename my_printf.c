@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 	{
 		if (*format == '%')
 		{
-			format++;
+			format++;  /* Move to the next character after '%' */
 			switch (*format)
 			{
 				case 'c':
@@ -53,9 +53,10 @@ int _printf(const char *format, ...)
 			putchar(*format);
 			count++;
 		}
-		format++;
+		format++;  /* Move to the next character in the format string */
 	}
 
 	va_end(args);
 	return (count);
 }
+
