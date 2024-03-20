@@ -6,7 +6,5 @@
 #include <unistd.h>
 
 int _printf(const char *format, ...);
-int octal(int num);
-int binary(int num);
 
 #endif 
