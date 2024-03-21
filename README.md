@@ -152,4 +152,4 @@ Holberton School, cohort 23
 
 # License
 This project is under the license [MIT License](https://opensource.org/license/mit)
->>>>>>> nelly
+
