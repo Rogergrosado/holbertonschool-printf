@@ -134,15 +134,23 @@ The printf function is implemeted in the file 'my_printf.c'. It makes usage of t
 ## Examples
 
 ```c
-my_printf("Character: &c\n") 'A');
-my_printf("String: %s\n", "Hello");
-my_printf("Intenger: %d\n", 42);
-my_printf("Percentage sign: %%\n);
+ _printf("Negative:[%d]\n", -762534);
+Output:   Negative:[-762534]
+```
+```c
+_printf("Character:[%c]\n", 'H');
+Output:   Character:[H]
+```
+```c
+_printf("Actual     : %s\n", "holberton");
+Output:    Actual     : holberton
 ```
 
 ## Contributors
-Roger Rosado
-Danielys Carrasquillo
+#####Roger Rosado
+Holberton School, cohort 23
+#####Danielys Carrasquillo
+Holberton School, cohort 23
 
 # License
 This project is under the license MIT License.
