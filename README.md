@@ -23,9 +23,20 @@ All files are written in C and follows the Betty coding style for Holberton Scho
 
 Myprintf is a function created that serves as simulation for the printf function.
 
+### Authorized functions and macros
+* write (man 2 write)
+* malloc (man 3 malloc)
+* free (man 3 free)
+* va_start (man 3 va_start)
+* va_end (man 3 va_end)
+* va_copy (man 3 va_copy)
+* va_arg (man 3 va_arg)
+* _putchar(char c)
+
+
 ## Features
-*Support for formatting specifiers: %c, %s, %d, %i, %%.
-*Variadic arguments handling using stdarg.h
+* Support for formatting specifiers: %c, %s, %d, %i, %%.
+* Variadic arguments handling using stdarg.h.
 
 ## How to use
 To use the custom my_printf, include the header file 'my_printf.h' and call the 'my_printf' function with strings and arguments that wants to be printed.
