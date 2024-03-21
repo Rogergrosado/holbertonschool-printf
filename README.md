@@ -53,7 +53,7 @@ Myprintf is a function created that serves as simulation for the printf function
 * int print_pct(va_list args);
 * int print_dec(va_list args);
 
-### File description
+## File description
 
 * my_printf.c: - contains the function _printf()
 * _putchar.c: - contains the function _putchar()
@@ -64,6 +64,7 @@ Myprintf is a function created that serves as simulation for the printf function
 * main.h - contains all headers, prototypes and structure declaration
 
 ## Function description
+
 **int _printf(const char *format, ...)**
 
 This function produces output under the control of a format string that specifies how subsequent arguments (or arguments accessed via the variable-length argument of stdarg(3)) are converted for output.
