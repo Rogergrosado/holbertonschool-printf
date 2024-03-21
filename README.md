@@ -69,7 +69,7 @@ Myprintf is a function created that serves as simulation for the printf function
 This function produces output under the control of a format string that specifies how subsequent arguments (or arguments accessed via the variable-length argument of stdarg(3)) are converted for output.
 
 The **format string** is composed of zero or more directives:
--
+
 1. Ordinary characters that are copied unchanged to the output stream. (except %)
 2. Conversion specifications, each of which results in fetching zero or more subsequent arguments. Each conversion specification starts with the character %, ends with a conversion specifier ( which is a letter).
 
