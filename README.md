@@ -145,10 +145,10 @@ Output:    Actual     : holberton
 ```
 
 ## Contributors
-#####Roger Rosado
+##### Roger Rosado
 Holberton School, cohort 23
-#####Danielys Carrasquillo
+##### Danielys Carrasquillo
 Holberton School, cohort 23
 
 # License
-This project is under the license MIT License.
+This project is under the license [MIT License](https://opensource.org/license/mit)
