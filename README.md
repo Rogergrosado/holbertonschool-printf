@@ -88,8 +88,6 @@ The conversion specifier is a letter that specifies the type of conversion to be
 
 **%:**  A per cent sign '%' is written. No argument is converted.
 
-**%:**  A per cent sign '%' is written. No argument is converted.
-
 
 **Return value:**
 
