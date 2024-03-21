@@ -23,13 +23,12 @@ return 0;
 The printf function is implemeted in the file 'my_printf.c'. It makes usage of the header 'stdarg.h'to handle variadic arguments. This function parses the format string, identifies formating specifiers, then prints the corresponding arguments.
 
 ## Examples
+
 ```c
 my_printf("Character: &c\n") 'A');
 my_printf("String: %s\n", "Hello");
 my_printf("Intenger: %d\n", 42);
 my_printf("Percentage sign: %%\n);
-
----
 
 ## Contributors
 Roger Rosado
