@@ -53,6 +53,29 @@ Myprintf is a function created that serves as simulation for the printf function
 * int print_pct(va_list args);
 * int print_dec(va_list args);
 
+### File description
+
+* my_printf.c: - contains the function _printf()
+* _putchar.c: - contains the function _putchar()
+* man_3_printf: - manual page for _printf() function.
+* get_functions.c - contains the function get_func()
+* file_functions.c - contains the functions print_char, print_str and print_pct for the case of printing character, string and '%'
+* file_func_dec_int.c - contains the function print_dec for the case of printing decimal and integer
+* main.h - contains all headers, prototypes and structure declaration
+
+## Function description
+**int _printf(const char *format, ...)**
+
+This function produces output under the control of a format string that specifies how subsequent arguments (or arguments accessed via the variable-length argument of stdarg(3)) are converted for output.
+
+The **format string** is composed of zero or more directives:
+
+1. Ordinary characters that are copied unchanged to the output stream. (except %)
+2. Conversion specifications, each of which results in fetching zero or more subsequent arguments. Each conversion specification starts with the character %, ends with a conversion specifier ( which is a letter).
+
+
+
+
 
 
 
