@@ -77,12 +77,17 @@ The **conversion specifier**:
 
 The conversion specifier is a letter that specifies the type of conversion to be applied. Our program includes the following conversion specifiers:
 
-**:** decimal number to be provided for printing.
-**i:** integer to be provided for printing
-**c:** character to be provided for printing
-**s:** ...The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
-**%:** A per cent sign '%' is written. No argument is converted.
-**%:** A per cent sign '%' is written. No argument is converted.
+**:**   decimal number to be provided for printing.
+
+**i:**  integer to be provided for printing.
+
+**c:**   character to be provided for printing.
+
+**s:**   ...The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
+
+**%:**  A per cent sign '%' is written. No argument is converted.
+
+**%:**  A per cent sign '%' is written. No argument is converted.
 
 
 **Return value:**
