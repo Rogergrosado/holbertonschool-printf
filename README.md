@@ -65,7 +65,7 @@ Myprintf is a function created that serves as simulation for the printf function
 
 ## Function description
 
-__int _printf(const char *format, ...)__
+**int _printf(const char \*format, ...)**
 
 This function produces output under the control of a format string that specifies how subsequent arguments (or arguments accessed via the variable-length argument of stdarg(3)) are converted for output.
 
