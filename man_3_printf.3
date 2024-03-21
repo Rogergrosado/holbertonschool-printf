@@ -1,0 +1,36 @@
+.TH man_3_printf 3 "March 2024" "Roger Rosado and Danielys Carrasquillo"
+
+.SH NAME
+myprintf \- printf implementation creation function.
+
+.SH SYNOPSIS
+.B myprintf
+#include <stdio.h>
+int myprintf(const char *format, ...);
+
+
+
+.SH DESCRIPTION
+The myprintf is a created function for formatted output that serves as simulation to the printf function. This function formats and prints data to the standard output according to the format specified.
+
+.SH OPTIONS
+None.
+
+.SH RETURN VALUE
+Returns the number of characters printed (excluding the null bytes used to end output to strings).
+
+.SH EXAMPLES
+Print a string
+.nf
+.B my_printf.c
+("Hello, World!\n");
+.fi
+
+.SH AUTHOR
+Roger Rosado and  Danielys Carrasquillo
+
+.SH BUGS
+None known.
+
+.SH COPYRIGHT
+Copyright (c) 2024 Danielys/Roger. This is free software: everyone is free to redistribute and modify under terms of the GNU General Public License as published by the Free Software Foundation.
