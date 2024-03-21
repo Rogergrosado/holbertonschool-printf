@@ -73,7 +73,22 @@ The **format string** is composed of zero or more directives:
 1. Ordinary characters that are copied unchanged to the output stream. (except %)
 2. Conversion specifications, each of which results in fetching zero or more subsequent arguments. Each conversion specification starts with the character %, ends with a conversion specifier ( which is a letter).
 
+The **conversion specifier**:
 
+The conversion specifier is a letter that specifies the type of conversion to be applied. Our program includes the following conversion specifiers:
+
+**:** decimal number to be provided for printing.
+**i:** integer to be provided for printing
+**c:** character to be provided for printing
+**s:** ...The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
+**%:** A per cent sign '%' is written. No argument is converted.
+**%:** A per cent sign '%' is written. No argument is converted.
+
+
+**Return value:**
+
+
+Upon success, _printfs return the number of characters printed (excluding the null byte used to end output to strings) A negative 1 is returned if an output error is encountered.
 
 
 
