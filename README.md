@@ -97,7 +97,7 @@ Upon success, _printfs return the number of characters printed (excluding the nu
 
 ___
 
-**int (*get_func(const char *format))(va_list)**
+**int (|*get_func(const char \*format))(va_list)**
 
 This function called by _printf() and checks for valid conversion specifier when it finds a '%' character. The *get_func function will check for the right conversion specifier. Upon valid specifier, it returns the corresponding function.
 ___
