@@ -129,6 +129,12 @@ return 0;
 ## Implementation Details
 The printf function is implemeted in the file 'my_printf.c'. It makes usage of the header 'stdarg.h'to handle variadic arguments. This function parses the format string, identifies formating specifiers, then prints the corresponding arguments.
 
+### Flowchart
+
+![flowchart](https://cdn.discordapp.com/attachments/1219269993397747842/1220494908402434119/PP11QyGW58Jl_egvB4cWv0SaXrqelPLIs5DFYvZdhc1yegRjpw_cTIbbBuwyRnn7JxdeLBRLgtsZfdEJMKtFsdjSOdAXsDvoMdLvmZYEmwo-RiuJ-bVc2Fwa1C78fRglnq41qm7cffCsPSTRM8vp7JkB_eDoSm1onPNAnMx1z4CpYEKSoJZhAC5bTAO39tHPv22oYBXEikvfXbEY73aijGdszcZfnN6GVFAPxaVU6_yhEl-V1_f-W5I3hP8Kz6_y-vANi3GkjAxx3mdFXQCwrTcs-Xy0.png?ex=660f2575&is=65fcb075&hm=e71934876046d8582027e0a0b8492f24e50c974582700ef0c250aa167913554c&)
+
+
+
 ## Examples
 
 ```c
