@@ -29,6 +29,7 @@ my_printf("Character: &c\n") 'A');
 my_printf("String: %s\n", "Hello");
 my_printf("Intenger: %d\n", 42);
 my_printf("Percentage sign: %%\n);
+```
 
 ## Contributors
 Roger Rosado
