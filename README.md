@@ -133,6 +133,14 @@ The printf function is implemeted in the file 'my_printf.c'. It makes usage of t
 
 ![flowchart](https://cdn.discordapp.com/attachments/1219269993397747842/1220494908402434119/PP11QyGW58Jl_egvB4cWv0SaXrqelPLIs5DFYvZdhc1yegRjpw_cTIbbBuwyRnn7JxdeLBRLgtsZfdEJMKtFsdjSOdAXsDvoMdLvmZYEmwo-RiuJ-bVc2Fwa1C78fRglnq41qm7cffCsPSTRM8vp7JkB_eDoSm1onPNAnMx1z4CpYEKSoJZhAC5bTAO39tHPv22oYBXEikvfXbEY73aijGdszcZfnN6GVFAPxaVU6_yhEl-V1_f-W5I3hP8Kz6_y-vANi3GkjAxx3mdFXQCwrTcs-Xy0.png?ex=660f2575&is=65fcb075&hm=e71934876046d8582027e0a0b8492f24e50c974582700ef0c250aa167913554c&)
 
+* Start: This node represents the starting point of the flowchart.
+* Call _printf(format, ...): This action indicates calling the _printf function with the specified format string and variable arguments.
+* Loop over format string?: This decision point checks whether there are more characters to process in the format string.
+* Loop over format string? (No): Once the entire format string has been processed, the flowchart ends.
+* % character found?: This decision point checks if the current character in the format string is a % character.
+* Yes path from % character found?: If the % character is found, the flowchart proceeds to call get_func() to determine the corresponding print function for the specifier encountered. If the specifier is one of 'c', 's', '%', 'd', or 'i', then the flowchart calls the corresponding print function. Otherwise, it prints the character directly and moves on to the next character in the format string.
+* No path from % character found?: If the current character is not a % character, the flowchart prints the character directly and moves on to the next character in the format string.
+* Stop: This node represents the end of the flowchart.
 
 
 ## Examples
