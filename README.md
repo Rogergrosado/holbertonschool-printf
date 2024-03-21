@@ -35,8 +35,14 @@ Myprintf is a function created that serves as simulation for the printf function
 
 
 ## Features
-* Support for formatting specifiers: %c, %s, %d, %i, %%.
-* Variadic arguments handling using stdarg.h.
+
+### Libraries
+* <stdarg.h>
+* <stdio.h>
+* <unistd.h>
+* <stdlib.h>
+* <limits.h>
+* <string.h>
 
 ## How to use
 To use the custom my_printf, include the header file 'my_printf.h' and call the 'my_printf' function with strings and arguments that wants to be printed.
