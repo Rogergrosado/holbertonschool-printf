@@ -10,6 +10,8 @@ Myprintf is a function created that serves as simulation for the printf function
 
 ## How to use
 To use the custom my_printf, include the header file 'my_printf.h' and call the 'my_printf' function with strings and arguments that wants to be printed.
+
+```c
 #include "my_printf.h'
 
 int main(void){
