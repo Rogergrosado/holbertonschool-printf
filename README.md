@@ -44,6 +44,16 @@ Myprintf is a function created that serves as simulation for the printf function
 * <limits.h>
 * <string.h>
 
+### Function prototypes
+* int (*get_func(const char *format))(va_list);
+* int _putchar(char c);
+* int _printf(const char *format, ...);
+* int print_str(va_list args);
+* int print_char(va_list args);
+* int print_pct(va_list args);
+* int print_dec(va_list args);
+
+
 
 
 ## How to use
