@@ -94,9 +94,7 @@ The conversion specifier is a letter that specifies the type of conversion to be
 **Return value:**
 
 Upon success, _printfs return the number of characters printed (excluding the null byte used to end output to strings) A negative 1 is returned if an output error is encountered.
-
 ___
-
 **int (|*get_func(const char \*format))(va_list)**
 
 This function called by _printf() and checks for valid conversion specifier when it finds a '%' character. The *get_func function will check for the right conversion specifier. Upon valid specifier, it returns the corresponding function.
@@ -105,7 +103,6 @@ ___
 
 This function gets a variadic argument and prints each character of char type.
 ___
-
 **int print_str(va_list args)**
 
 This function gets a variadic argument, traverse the string, and prints a character at a time.
