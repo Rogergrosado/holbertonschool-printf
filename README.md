@@ -95,7 +95,7 @@ The conversion specifier is a letter that specifies the type of conversion to be
 
 Upon success, _printfs return the number of characters printed (excluding the null byte used to end output to strings) A negative 1 is returned if an output error is encountered.
 ___
-**int (|*get_func(const char \*format))(va_list)**
+__int (*get_func(const char *format))(va_list)__
 
 This function called by _printf() and checks for valid conversion specifier when it finds a '%' character. The *get_func function will check for the right conversion specifier. Upon valid specifier, it returns the corresponding function.
 ___
